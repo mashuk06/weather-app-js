@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const getWeatherData = async () => {
         const apiKey = '61da88ac6ba7489c9f4154237232106';
-        let apiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}`;
+        let apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}`;
 
         if (searchQuery.value) {
             apiUrl += `&q=${searchQuery.value}&aqi=no`;
